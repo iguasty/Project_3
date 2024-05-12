@@ -70,3 +70,34 @@ Object Relationships
         
 
 I was assigned the Person and Basket objects for this project.
+
+Test cases for Person:
+
+    Invalid input handling for throwing speed
+    Invalid input handling for throw direction
+    Invalid input handling for name input
+
+Test Cases for Basket: 
+
+    Tree overlap check
+    Basket Number consistency
+    Basket-disk interaction
+
+Test Cases for Trees:
+
+    Tree overlap with basket check
+    Tree interaction with disk
+    Tree location not where person starts
+
+Test Cases for Wind: 
+
+    Wind correctly interacts with disk 
+
+Test Cases for Course:
+
+    Course boundary set -Check to see if disk stays in course at all times
+    Full game simulation test
+    Object creation and destruction check
+
+
+I was able to implement test functionality for the Person object. The test can be done by changing the values in the function person_error_test() in the class_person.py file. Any errors output to the console. 

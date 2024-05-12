@@ -1,16 +1,18 @@
 import tkinter as tk
 from class_basket import Basket
 from class_person import Person
-
-
+from class_person import person_error_test
 
 root = tk.Tk(className= "golfsim")
 
 title_label = tk.Label(root, text="DISK GOLF SIMULATOR")
 prompt_label= tk.Label(root, text="Enter your name in the textbox and press enter to see nothing happen! Wow!")
 
+#init objects
 person = Person()
 basket = Basket()
+
+person_error_test() #error test
 
 entry_box = tk.Entry(root)
 enter_button = tk.Button(root, text="Enter")
@@ -20,7 +22,6 @@ basket.coordinate_set() #sets random xy coordinates
 x_coord = basket.coordinates[0] #gets x coordinate
 y_coord = basket.coordinates[1] #gets y coordinate
 basket_coord_label = tk.Label(root, text=f"The basket coordinates are: X={x_coord}  Y={y_coord}.")
-
 
 title_label.pack()
 prompt_label.pack()

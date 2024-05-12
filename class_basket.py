@@ -9,22 +9,12 @@ class Basket:
         self.coordinates = new_coordinates
 
     def basket_num_set(self, basket_numy):
-        """Set basket number
-
-        Args: 
-            basket_numy (int)
-        Returns:
-            _type_: basket number
-        """
+        """sets basket number"""
         self.basket_num = basket_numy
         return self.basket_num
     
     def coordinate_set(self):
-        """Assigns random coordinates to basket
-
-        Returns:
-            _type_: coordinates (array)
-        """
+        """Assigns random coordinates to basket"""
         x = random.randint(1, 100)
         y = random.randint(1, 100)
         self.coordinates = arr.array('i',[x,y])
